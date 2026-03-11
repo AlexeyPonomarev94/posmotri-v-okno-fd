@@ -37,6 +37,14 @@ ol {
   list-style: none;
 }
 
+.page {
+  display: flex;
+}
+
+.content {
+  display: flex;
+}
+
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
