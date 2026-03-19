@@ -45,12 +45,6 @@ ol {
 }
 
 /* ===== UTILITIES ===== */
-.font-accent {
-  color: #fff;
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
-}
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -210,11 +204,7 @@ ol {
   background-color: #fff;
 }
 
-.search-form__label .search-form__checkbox:focus {
-  outline: none;
-}
-
-.search-form__label:has(.search-form__checkbox:focus-visible) {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
@@ -238,8 +228,10 @@ ol {
   margin-bottom: 26px;
   font-size: 75px;
   line-height: 70px;
-
-text-transform: uppercase;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
 }
 
 .content__accent {
@@ -291,7 +283,7 @@ text-transform: uppercase;
 }
 
 .content__card-link_current {
-  background-color: #1b1919;
+  background-color: #545050;
 }
 
 .content__video-card {
@@ -306,20 +298,24 @@ text-transform: uppercase;
 }
 
 .content__video-card-title {
-  margin-bottom: 2px;
+  margin-bottom: 6px;
   overflow: hidden;
-  font-size: 30px;
-  line-height: 35px;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .content__video-card-description {
-  display: -webkit-box; /* включаем старую flex-модель WebKit */
-  overflow: hidden; /* скрыть лишний текст */
+  display: -webkit-box;
+  overflow: hidden;
   line-height: 16px;
-  -webkit-box-orient: vertical; /* направление */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 .content__video-card-thumbnail {
